@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _startMove: 18.3
-  _startGame: 16.3
-  _animTeleport: 14.5
+  _startMove: 19.7
+  _startGame: 17.6
+  _animTeleport: 16
   TeleportSound: {fileID: 1607394584}

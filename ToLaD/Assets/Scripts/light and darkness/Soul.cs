@@ -19,13 +19,13 @@ public class Soul : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            StartCoroutine(SoulDestroy());
+            StartCoroutine(SoulDestroy());            
         }       
     }
 
     IEnumerator SoulDestroy()
     {
-
+        
         Teleport.countGhost++;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         if (!black)

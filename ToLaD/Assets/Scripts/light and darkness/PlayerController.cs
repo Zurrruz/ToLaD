@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     [SerializeField]
     private float _teleportX;
-      
 
-    
+    public TutorialManager TutorialManager;
+
     Vector2 _input;
    public static  Vector2 _movementDirection;
 
@@ -242,10 +242,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && _isWhiteWorld == 2)
         {
+            
             StartCoroutine(TeleportClose());
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && _isWhiteWorld == 1)
         {
+            TutorialManager.OnEvent(TutorialEvent.World);
             StartCoroutine(TeleportOpen());
         }
     }

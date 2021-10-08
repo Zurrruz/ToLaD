@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TeleportOne : MonoBehaviour
 {
+    public static TeleportOne Instance;
+
+    public TutorialManager TutorialManager;
+
     private Animator _anim;
     [SerializeField]
     private GameObject _player;
@@ -39,6 +43,7 @@ public class TeleportOne : MonoBehaviour
     {
         yield return new WaitForSeconds(_startGame);
         _player.SetActive(true);
+        TutorialManager.OnEvent(TutorialEvent.GameStart); 
     }
 
     IEnumerator StartMove()
