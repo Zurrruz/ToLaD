@@ -17,3 +17,5 @@ MonoBehaviour:
   SupportedLanguage:
   - Language: 10
     ResoruceFile: eng
+  - Language: 30
+    ResoruceFile: loc_russian

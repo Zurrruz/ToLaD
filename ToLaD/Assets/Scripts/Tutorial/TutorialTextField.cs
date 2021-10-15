@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 
+
 public class TutorialTextField : MonoBehaviour
 {
     [SerializeField]
@@ -8,6 +9,6 @@ public class TutorialTextField : MonoBehaviour
 
     public void SetText(string text)
     {
-        this._text.text = text;
+        this._text.text = text;        
     }
 }

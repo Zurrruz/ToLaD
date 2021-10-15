@@ -12,8 +12,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4aaefb0e91703d419cfcecb8f121838, type: 3}
   m_Name: eng
   m_EditorClassIdentifier: 
+  Font: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   Terms:
-  - key: qwe
-    Value: 123
-  - key: ewq
-    Value: 321
+  - key: Start
+    Value: Start Game
+  - key: Options
+    Value: Options
+  - key: Exit
+    Value: Exit
+  - key: Language
+    Value: Language
+  - key: English
+    Value: English
+  - key: Russian
+    Value: Russian
+  - key: Drag the block
+    Value: Drag the block
+  - key: Light world
+    Value: Light world
+  - key: Dark world
+    Value: Dark world
+  - key: Back
+    Value: Back
+  - key: Sound
+    Value: Sound
+  - key: Pause
+    Value: Pause
+  - key: Ghost
+    Value: 'Ghost:'
+  - key: Restart
+    Value: Restart
+  - key: MainMenu
+    Value: Main Menu
+  - key: TeleportOneText
+    Value: '- Master Erias. We cannot leave until we have helped all souls.'
+  - key: TeleportTwooText
+    Value: '- Master, you did a good job. All souls are collected, you can go further'
+  - key: FloryText 1
+    Value: ' - Master Erias ... Master Erias ...'
+  - key: EriasText 1
+    Value: '- Flory? What happened?'
+  - key: FloryText 2
+    Value: '- Souls ... Temple ... Everything has got mixed up, the distribution
+      of souls no longer works!'
+  - key: EriasText 2
+    Value: '- It can''t be! This could lead to disaster! '
+  - key: EriasText 3
+    Value: '- So, without panic, now we will solve everything in no time ...'
+  - key: Tutorial 1
+    Value: Master, the spirit is near. (WASD)
+  - key: Tutorial 2
+    Value: ' Great.'
+  - key: Tutorial 3
+    Value: ' Now we need to find another  teleport'
+  - key: Tutorial 4
+    Value: ' The temple blocked all doors. '
+  - key: Tutorial 5
+    Value: ' To open them, you need to energize these two obelisks'
+  - key: Tutorial 6
+    Value: ' Find the platform that powers the obelisk'
+  - key: Tutorial 7
+    Value: There must be a power source here
+  - key: Tutorial 8
+    Value: Master, find an energy cube and place it on this platform
+  - key: Tutorial 9
+    Value: Great job! Now find the second platform
+  - key: Tutorial 10
+    Value: Hmm ... The platform is destroyed and unable to supply energy.
+  - key: Tutorial 11
+    Value: ' Perhaps in the dark world, the platform is still functioning.'
+  - key: Tutorial 12
+    Value: 'Press "2" to move to the dark world '
+  - key: Tutorial 13
+    Value: 'Fine! When you want to move to the light world press "1" '
+  - key: Tutorial 14
+    Value: ' Now find the energy cube in the dark world and power the obelisk'
+  - key: Tutorial 15
+    Value: 'Master You did it! the way is free, but don''t forget to collect all
+      the souls '
+  - key: Tutorial 16
+    Value: 'At the top left, the number of collected souls is displayed '

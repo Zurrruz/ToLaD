@@ -570,6 +570,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &25062659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1415195408433281393, guid: b0e0d21fc6eca65428a45643060ee6a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1910677770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &26017470
 GameObject:
   m_ObjectHideFlags: 0
@@ -27293,6 +27299,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &972159402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4322073968663291213, guid: b0e0d21fc6eca65428a45643060ee6a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1910677770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &974816511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8,
@@ -53343,6 +53355,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1843399942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1415195407773705872, guid: b0e0d21fc6eca65428a45643060ee6a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1910677770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1843399943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843399942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ba682292441a34cac6b93d1503806d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1848207957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54397,7 +54427,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1910677770}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1843399942}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 639a850a12c1b7d4cbf3d303e670779e, type: 3}
@@ -54943,10 +54973,55 @@ PrefabInstance:
       propertyPath: _director
       value: 
       objectReference: {fileID: 1042276791}
+    - target: {fileID: 1415195407773705879, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: _pauseMenu
+      value: 
+      objectReference: {fileID: 25062659}
+    - target: {fileID: 1415195407773705879, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: _optionsMenu
+      value: 
+      objectReference: {fileID: 972159402}
     - target: {fileID: 1415195408583387173, guid: b0e0d21fc6eca65428a45643060ee6a6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322073969038160079, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1843399943}
+    - target: {fileID: 4322073969038160079, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EngButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322073969209824867, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1843399943}
+    - target: {fileID: 4322073969209824867, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RusButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322073969368768221, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1887551479}
+    - target: {fileID: 4322073969368768221, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322073969368768221, guid: b0e0d21fc6eca65428a45643060ee6a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0e0d21fc6eca65428a45643060ee6a6, type: 3}

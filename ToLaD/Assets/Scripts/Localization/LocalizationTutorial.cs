@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,14 +7,14 @@ using UnityEngine;
 namespace Assets.Scripts
 {
     [RequireComponent(typeof(TextMeshProUGUI))]
-    public class LocalizationComponent : MonoBehaviour
+    public class LocalizationTutorial : MonoBehaviour
     {
         private Dictionary<string, string> _parameters;
         [SerializeField]
         private TextMeshProUGUI _textMeshPro;
         [SerializeField]
-        private string key;
-        
+        public static string key;
+
 
         public string Key
         {
@@ -28,7 +28,7 @@ namespace Assets.Scripts
 
         private void Awake()
         {
-            if(_textMeshPro is null)
+            if (_textMeshPro is null)
             {
                 _textMeshPro = GetComponent<TextMeshProUGUI>();
             }
@@ -67,3 +67,4 @@ namespace Assets.Scripts
         }
     }
 }
+

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class TutorialManager : MonoBehaviour
     private bool HasNextStep => _currentScript.steps.Length > _currentStep + 1;
     private bool IsLocked => _lockTimer > 0;
 
+    
     private TutorialTextField _tutorialTextField;
     private GameObject _tutorialHitGO;
     private GameObject _tutorialHitOnUI;
@@ -140,12 +142,22 @@ public class TutorialManager : MonoBehaviour
 
     private void ShowText(string data)
     {
+        var english = 1;
+        var russian = 2;
+
         if(_tutorialTextField == null)
         {
             _tutorialTextField = Instantiate(_tutorialTextFieldPrefabs);            
         }
-        _tutorialTextField.SetText(data);
+        //_tutorialTextField.SetText(data);
+        LocalizationTutorial.key = data;
+        if(lang ==  english)
+            Localization.SetLanguage(UnityEngine.SystemLanguage.English);
+        if (lang == russian)
+            Localization.SetLanguage(UnityEngine.SystemLanguage.Russian);
     }
+
+    int lang;
 
     private void Update()
     {
@@ -153,7 +165,10 @@ public class TutorialManager : MonoBehaviour
         {
             _lockTimer -= Time.deltaTime;
         }
-        OnEvent(TutorialEvent.Update); 
+        OnEvent(TutorialEvent.Update);
+
+        lang = PlayerPrefs.GetInt("lang");
+
     }
 
     public void OnEvent(TutorialEvent @event)
