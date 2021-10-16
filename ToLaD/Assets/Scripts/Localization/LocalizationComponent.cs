@@ -14,10 +14,11 @@ namespace Assets.Scripts
         private TextMeshProUGUI _textMeshPro;
         [SerializeField]
         private string key;
+        public static string keyTutorial;
         
 
         public string Key
-        {
+        {             
             get => key;
             set
             {
@@ -56,8 +57,12 @@ namespace Assets.Scripts
 
         private void UpdateTerms()
         {
+            if(key == "")                        
+                _textMeshPro.text = Localization.GetTerm(keyTutorial, _parameters);            
+            else                
+                _textMeshPro.text = Localization.GetTerm(key, _parameters);
+
             _textMeshPro.font = Localization.SuggestedFont;
-            _textMeshPro.text = Localization.GetTerm(key, _parameters);
         }
 
         public void SetParameters(Dictionary<string, string> parameters)
@@ -65,5 +70,6 @@ namespace Assets.Scripts
             _parameters = parameters;
             UpdateTerms();
         }
+        
     }
 }

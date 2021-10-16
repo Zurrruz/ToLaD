@@ -149,9 +149,9 @@ public class TutorialManager : MonoBehaviour
         {
             _tutorialTextField = Instantiate(_tutorialTextFieldPrefabs);            
         }
-        //_tutorialTextField.SetText(data);
-        LocalizationTutorial.key = data;
-        if(lang ==  english)
+        
+        LocalizationComponent.keyTutorial = data;
+        if (lang == english)
             Localization.SetLanguage(UnityEngine.SystemLanguage.English);
         if (lang == russian)
             Localization.SetLanguage(UnityEngine.SystemLanguage.Russian);
