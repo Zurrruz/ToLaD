@@ -241,14 +241,13 @@ public class PlayerController : MonoBehaviour
     private void ChangeOfTheWorld()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && _isWhiteWorld == 2)
-        {
-            
+        {            
             StartCoroutine(TeleportClose());
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && _isWhiteWorld == 1)
         {
-            TutorialManager.OnEvent(TutorialEvent.World);
             StartCoroutine(TeleportOpen());
+            TutorialManager.OnEvent(TutorialEvent.World);            
         }
     }
 
